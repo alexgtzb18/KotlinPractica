@@ -77,28 +77,43 @@ class MainActivity : AppCompatActivity() {
 
     fun makeSound(view: View) {
         var rNumber = (0..2).random()
-        when (rNumber) {
-            0 -> toast("${carList[index!!].name} suena raro")
-            1 -> toast("${carList[index!!].name} el motor se escucha bien")
-            2 -> toast("${carList[index!!].name} ruido raro en el escape")
+
+        if (rNumber == 0){
+            toast("${carList[index!!].name} suena raro")
+        }
+        else if (rNumber == 1){
+            toast("${carList[index!!].name} el motor se escucha bien")
+        }
+        else{
+            toast("${carList[index!!].name} ruido raro en el escape")
         }
     }
 
     fun function(view: View) {
         var rNumber = (0..2).random()
-        when (rNumber) {
-            0 -> toast("${carList[index!!].name} arranca bien")
-            1 -> toast("${carList[index!!].name} el freno se atora")
-            2 -> toast("${carList[index!!].name} la caja de cambios esta deteriorada")
+
+        if (rNumber == 0){
+            toast("${carList[index!!].name} arranca bien")
+        }
+        else if (rNumber == 1){
+            toast("${carList[index!!].name} el freno se atora")
+        }
+        else{
+            toast("${carList[index!!].name} la caja de cambios esta deteriorada")
         }
     }
 
     fun lights(view: View) {
         var rNumber = (0..2).random()
-        when (rNumber) {
-            0 -> toast("${carList[index!!].name} se muestra el testigo del aceite")
-            1 -> toast("${carList[index!!].name} la presion de las llantas esta baja")
-            2 -> toast("${carList[index!!].name} alguno de los stop no funciona")
+
+        if (rNumber == 0){
+            toast("${carList[index!!].name} se muestra el testigo del aceite")
+        }
+        else if (rNumber == 1){
+            toast("${carList[index!!].name} la presion de las llantas esta baja")
+        }
+        else{
+            toast("${carList[index!!].name} alguno de los stop no funciona")
         }
     }
 
